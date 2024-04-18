@@ -1,0 +1,72 @@
+<mat-stepper class="append-stepper" [orientation]="(stepperOrientation | async)!" #stepper color="primary">
+	<mat-step [stepControl]="firstFormGroup" label="Choose your source">
+		<mat-tab-group dynamicHeight color="primary">
+			<mat-tab label="Upload">
+				<div class="upload" *ngIf="!loading" gdAlignColumns="center stretch">
+					<form name="firstFormGroup" gdAlignRows="center stretch">
+						<input id="file_image" class="file" type="file" multiple accept=".png,.bmp,.jpg,.jpeg" (change)="onChangeUpload($event)" />
+						<input id="file_video" class="file" type="file" multiple accept=".mp4,.avi,.mkv" (change)="onChangeUpload($event)" />
+						<input id="file_gif" class="file" type="file" multiple accept=".gif" (change)="onChangeUpload($event)" />
+						<input id="file_audio" class="file" type="file" multiple accept=".mp3" (change)="onChangeUpload($event)" />
+						<div class="button-row">
+							<button mat-button fxFlexAlign="center" (click)="onClickUpload('image')" matTooltip="upload a picture">
+								<mat-icon color="primary" inline>add_photo_alternate</mat-icon>
+							</button>
+							<button mat-button fxFlexAlign="center" (click)="onClickUpload('gif')" matTooltip="upload a gif">
+								<mat-icon color="primary" inline>camera_roll</mat-icon>
+							</button>
+							<button mat-button fxFlexAlign="center" (click)="onClickUpload('video')" matTooltip="upload a video">
+								<mat-icon color="primary" inline>ondemand_video</mat-icon>
+							</button>
+							<button mat-button fxFlexAlign="center" (click)="onClickUpload('audio')" matTooltip="upload an audio">
+								<mat-icon color="primary" inline>audiotrack</mat-icon>
+							</button>
+						</div>
+					</form>
+				</div>
+			</mat-tab>
+
+			<mat-tab label="Instagram">
+				<div class="upload" *ngIf="!loading" gdAlignRows="center stretch" gdAlignColumns="center stretch">
+					<form name="firstFormGroup">
+						<div gdAlignRows="center stretch">
+
+						</div>
+					</form>
+				</div>
+			</mat-tab>
+
+			<mat-tab label="Flickr">
+				
+			</mat-tab>
+
+			<mat-tab label="Twiter">
+				
+			</mat-tab>
+
+			<mat-tab label="Map">
+				
+			</mat-tab>
+		</mat-tab-group>
+
+<!-- 		<div>
+			<button mat-button matStepperNext>Next</button>
+		</div> -->
+	</mat-step>
+
+
+	<mat-step [stepControl]="secondFormGroup" label="Choose your NFT">
+		<div>
+			<button mat-button matStepperPrevious i18n>Back</button>
+			<button mat-button matStepperNext i18n>Next</button>
+		</div>
+	</mat-step>
+
+	<mat-step>
+		<ng-template matStepLabel i18n>Done</ng-template>
+		<p>You are now done.</p>
+		<div>
+			<button mat-button matStepperPrevious i18n>Back</button>
+		</div>
+	</mat-step>
+</mat-stepper>

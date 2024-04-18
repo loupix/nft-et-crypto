@@ -1,0 +1,24 @@
+{
+  "locale": "fr",
+  "translations": {
+    "2454050363478003966": "Connexion",
+    "6304432362546770951": "Addresse",
+    "6993465966979190839": " Address Required ",
+    "1431416938026210429": "Mot de passe",
+    "1231696487273978126": " Merci d'entrer un mot de passe ",
+    "8699512499166571818": " Le mot de passe est trop court ",
+    "4768749765465246664": "Email",
+    "6673626898717784752": " Merci d'entrer un email valide ",
+    "1999053693976780664": " Merci d'entrer un email ",
+    "3301086086650990787": "Enregistrement",
+    "5186038954367142316": " Categorie ",
+    "4656894497305067963": " Items ",
+    "4228319514212568219": " Utilisateurs ",
+    "8826526706952320113": "Nouveaux NFT's",
+    "8844188370734351699": "Meilleur prix",
+    "7195857068077796966": "Les plus vues",
+    "8890553633144307762": "Précédent",
+    "3885497195825665706": "Suivant",
+    "397098723873502323": "Finaliser"
+  }
+}

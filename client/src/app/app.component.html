@@ -1,0 +1,112 @@
+<mat-toolbar>
+  <span>NftCrypto</span>
+  <span class="spacer"></span>
+  <button mat-button [matMenuTriggerFor]="targetLogger" #targetMenuTrigger="matMenuTrigger"
+    (menuOpened)="OnMenuOpened()" (menuClosed)="menuOpen=false">
+    <mat-icon>accessibility_new</mat-icon>
+    <span i18n>Login</span> 
+    <mat-icon *ngIf="menuOpen">keyboard_arrow_up</mat-icon>
+    <mat-icon *ngIf="!menuOpen">keyboard_arrow_down</mat-icon>
+  </button>
+  <mat-menu #targetLogger="matMenu" xPosition="before" class="login-menu">
+    <mat-tab-group class="login-tabs" #targetLoginMenu (click)="$event.stopPropagation();" (selectedTabChange)="onTabChange($event)" 
+      [selectedIndex]="getSelectedIndex()" color="primary">
+
+      <mat-tab label="Login">
+        <form [formGroup]="loginForm" class="login-form" fxFlex="80" fxFlexOffset="10" (ngSubmit)="onLogin()">
+
+          <mat-form-field class="input-full-width" appearance="legacy">
+            <mat-label i18n>Address</mat-label>
+            <mat-icon matPrefix> email</mat-icon>
+            <input matInput placeholder="0xeedd54f5q" name="address" type="text" formControlName="address">
+            <mat-hint></mat-hint>
+            <mat-error *ngIf="loginForm.controls.address.hasError('required')" i18n>
+              Address Required
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="input-full-width" appearance="legacy">
+            <mat-label i18n>Password</mat-label>
+            <mat-icon matPrefix> vpn_key</mat-icon>
+            <input matInput placeholder="password" name="password" type="password" autocomplete="on" formControlName="password">
+            <mat-error *ngIf="loginForm.controls.password.hasError('required')" i18n>
+              Please enter a password
+            </mat-error>
+            <mat-error *ngIf="loginForm.controls.password.hasError('minlength')" i18n>
+              Password must be at least 6 characters
+            </mat-error>
+          </mat-form-field>
+
+          <div fxLayout="column" >
+            <button mat-raised-button color="basic" fxFlex="stretch" type="submit">Login</button>
+          </div>
+
+        </form>
+      </mat-tab>
+
+
+      <mat-tab label="Registration">
+        <form [formGroup]="registerForm" class="register-form" fxFlex="80" fxFlexOffset="10" (ngSubmit)="onRegister()">
+
+          <mat-form-field class="input-full-width" appearance="legacy">
+            <mat-label i18n>Email</mat-label>
+            <mat-icon matPrefix> email</mat-icon>
+            <input matInput placeholder="pseudo@email.com" name="email" type="email" formControlName="email">
+            <mat-hint></mat-hint>
+            <mat-error *ngIf="registerForm.controls.email.hasError('email') && !registerForm.controls.email.hasError('required')" i18n>
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="registerForm.controls.email.hasError('required')" i18n>
+              Please enter an email
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="input-full-width" appearance="legacy">
+            <mat-label i18n>Password</mat-label>
+            <mat-icon matPrefix> vpn_key</mat-icon>
+            <input matInput placeholder="password" name="password" type="password" autocomplete="on" formControlName="password">
+            <mat-error *ngIf="registerForm.controls.password.hasError('required')" i18n>
+              Please enter a password
+            </mat-error>
+            <mat-error *ngIf="registerForm.controls.password.hasError('minlength')" i18n>
+              Password must be at least 6 characters
+            </mat-error>
+          </mat-form-field>
+
+          <div fxLayout="column">
+            <button mat-raised-button color="basic" fxFlex="stretch" type="submit" i18n>Register</button>
+          </div>
+
+        </form>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-menu>
+</mat-toolbar>
+
+<ng-template [ngIf]="isLoading" fxLayout="row" fxLayout.xs="column">
+  <mat-progress-spinner fxLayoutAlign="center center"></mat-progress-spinner>
+</ng-template>
+
+<ng-template [ngIf]="!isLoading">
+  <ng-template [ngIf]="isLogged">
+    <mat-sidenav-container autosize>
+      <mat-sidenav #sidenav mode="side" opened [disableClose]="true">
+        <mat-nav-list>
+          <a mat-list-item [routerLink]="'/home'" routerLinkActive="nav-active"><mat-icon mat-list-icon>home</mat-icon> Home </a>
+          <a mat-list-item [routerLink]="'/item/append'" routerLinkActive="nav-active"><mat-icon mat-list-icon>library_add</mat-icon> Append </a>
+          <a mat-list-item [routerLink]="'/admin'" routerLinkActive="nav-active"><mat-icon mat-list-icon>assignment</mat-icon> Admin </a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div style="height: 88vh;">
+          <router-outlet></router-outlet>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </ng-template>
+
+  <ng-template [ngIf]="!isLogged">
+    <app-landing></app-landing>
+  </ng-template>
+</ng-template>
+<router-outlet></router-outlet>

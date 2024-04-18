@@ -1,0 +1,32 @@
+{
+  "name": "bot-nftcrypto",
+  "version": "1.0.0",
+  "description": "bot for nftcrypto",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn build && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "yarn rimraf ./dist",
+    "copy-files": "yarn copyfiles -u 1 src/**/*.json ./dist",
+    "build": "yarn clean && yarn tsc && yarn copy-files",
+    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+  },
+  "author": "loic daniel",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.3.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "temp-mail-api": "^1.1.1",
+    "winston": "^3.7.2",
+    "winston-mongodb": "^5.0.7"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3"
+  }
+}

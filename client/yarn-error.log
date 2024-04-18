@@ -1,0 +1,79 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\loupix\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js --silent
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\wureset;C:\Program Files\Git\cmd;C:\composer;C:\Program Files\Symfony;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\loupix\anaconda3;C:\Users\loupix\anaconda3\Library\mingw-w64\bin;C:\Users\loupix\anaconda3\Library\usr\bin;C:\Users\loupix\anaconda3\Library\bin;C:\Users\loupix\anaconda3\Scripts;C:\wxWidgets-3.0.1\lib\gcc_dll;C:\Users\loupix\AppData\Local\Programs\Python\Python37;C:\Users\loupix\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\loupix\AppData\Local\Programs\Python\Python37\Scripts;C:\Python27;C:\php7;C:\Users\loupix\AppData\Roaming\Composer\vendor\bin;c:\android;C:\flutter\bin;C:\ffmpeg\bin;C:\opencv\build\bin;C:\Users\loupix\AppData\Roaming\npm;C:\Program Files\Java\spring-1.5.7.RELEASE\bin;C:\Program Files\Java\apache-maven-3.8.3\bin;C:\Program Files (x86)\tcpdump
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  13.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\loupix\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141289:19)
+      at Object.onceWrapper (events.js:421:28)
+      at ClientRequest.emit (events.js:315:20)
+      at TLSSocket.emitRequestTimeout (_http_client.js:717:9)
+      at Object.onceWrapper (events.js:421:28)
+      at TLSSocket.emit (events.js:327:22)
+      at TLSSocket.Socket._onTimeout (net.js:481:8)
+      at listOnTimeout (internal/timers.js:549:17)
+      at processTimers (internal/timers.js:492:7)
+
+npm manifest: 
+  {
+    "name": "nft-crypto",
+    "version": "0.0.0",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "~11.2.14",
+      "@angular/common": "~11.2.14",
+      "@angular/compiler": "~11.2.14",
+      "@angular/core": "~11.2.14",
+      "@angular/forms": "~11.2.14",
+      "@angular/platform-browser": "~11.2.14",
+      "@angular/platform-browser-dynamic": "~11.2.14",
+      "@angular/router": "~11.2.14",
+      "rxjs": "~6.6.0",
+      "tslib": "^2.0.0",
+      "zone.js": "~0.11.3"
+    },
+    "devDependencies": {
+      "@angular-devkit/build-angular": "~0.1102.13",
+      "@angular/cli": "~11.2.15",
+      "@angular/compiler-cli": "~11.2.14",
+      "@types/jasmine": "~3.6.0",
+      "@types/node": "^12.11.1",
+      "codelyzer": "^6.0.0",
+      "jasmine-core": "~3.6.0",
+      "jasmine-spec-reporter": "~5.0.0",
+      "karma": "~6.1.0",
+      "karma-chrome-launcher": "~3.1.0",
+      "karma-coverage": "~2.0.3",
+      "karma-jasmine": "~4.0.0",
+      "karma-jasmine-html-reporter": "~1.5.0",
+      "protractor": "~7.0.0",
+      "ts-node": "~8.3.0",
+      "tslint": "~6.1.0",
+      "typescript": "~4.1.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

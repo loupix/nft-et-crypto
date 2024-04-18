@@ -1,0 +1,20 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "4738956211713007608": "{$START_TAG_MAT_ICON}accessibility_new{$CLOSE_TAG_MAT_ICON} Login {$START_TAG_MAT_ICON_1}keyboard_arrow_up{$CLOSE_TAG_MAT_ICON}{$START_TAG_MAT_ICON_2}keyboard_arrow_down{$CLOSE_TAG_MAT_ICON}",
+    "6624327170145958340": "  Address",
+    "7417503596576737218": "  Password",
+    "1231696487273978126": " Please enter a password ",
+    "8699512499166571818": " Password must be at least 6 characters ",
+    "5419817333368624324": "  Email",
+    "6673626898717784752": " Please enter a valid email address ",
+    "1999053693976780664": " Please enter an email ",
+    "3301086086650990787": "Register",
+    "8826526706952320113": "New NFT's",
+    "8844188370734351699": "Best price",
+    "7195857068077796966": "Best views",
+    "8890553633144307762": "Back",
+    "3885497195825665706": "Next",
+    "397098723873502323": "Done"
+  }
+}

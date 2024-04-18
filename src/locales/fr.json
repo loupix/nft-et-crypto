@@ -1,0 +1,31 @@
+{
+	"not connected": "Non connecter",
+	"not changed": "Non modifié",
+	"not created": "Non crée",
+	"not find": "Non trouvés",
+	"already connected": "Déjà connecter",
+	"not admin": "Vous n'etes pas admin",
+	"wrond email format": "Mauvais format d'email",
+
+	"Wrong syntax": "Mauvaise syntax",
+	"wrong password": "Mauvais mot de pass",
+
+	"user is not admin": "L'utilisateur n'est pas admin",
+	"user is banned": "L'utilisateur est bannis",
+	"user is not verified": "L'utilisateur n'est pas vérifié",
+	"user is not validated": "L'utilisateur n'est pas validée",
+	"user is not owner": "L'utilisateur n'est pas le propriétaire",
+
+	"user already exist": "Utilisateur déjà présent",
+	"category already exist": "Catégorie déjà présente",
+	"collection already exist": "Collection déjà présent",
+	"item already exist": "Item déjà présent",
+
+	"user not exist": "Utilisateur non présente",
+	"category not exist": "Categorie non présente",
+	"category parent not exist": "Categorie parent non présent",
+	"collection not exist": "Collection non présent",
+	"item not exist": "Item non présent"
+
+	
+}

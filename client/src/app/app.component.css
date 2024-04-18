@@ -1,0 +1,48 @@
+::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+  height: 27px !important;
+  min-height: 5px!important;
+  margin: 3px!important;
+  width: 90px!important;
+  min-width: 5px!important;
+}
+
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+#sidenav{
+  width: 200px;
+}
+
+mat-sidenav {
+  width: 200px;
+}
+
+.sidenav-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav {
+  padding: 20px;
+}
+
+.sidenav .nav-active, .sidenav .nav-active:hover{
+  background: rgba(0,0,0,1);
+}
+
+.login-menu{
+  max-width: none !important;
+}
+.login-tabs{
+  width: 20em;
+}

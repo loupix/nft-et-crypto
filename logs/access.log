@@ -1,0 +1,29 @@
+yarn run v1.22.18
+$ yarn build && node dist/app.js
+$ yarn clean && yarn tsc && yarn copy-files
+$ yarn rimraf ./dist
+$ /home/loupix/Documents/executable/NftCrypto/node_modules/.bin/rimraf ./dist
+$ /home/loupix/Documents/executable/NftCrypto/node_modules/.bin/tsc
+$ yarn copyfiles -u 1 src/**/*.json ./dist
+$ /home/loupix/Documents/executable/NftCrypto/node_modules/.bin/copyfiles -u 1 src/locales/de.json src/locales/en.json src/locales/fr.json ./dist
+
+Express server listening on port 9010, in development mode.
+
+[0mPOST / [33m404 [0m103.734 ms - 140[0m
+[0mPOST / [33m404 [0m65.128 ms - 140[0m
+[0mPOST / [33m404 [0m91.333 ms - 140[0m
+[0mPOST / [33m404 [0m63.346 ms - 140[0m
+[0mPOST / [33m404 [0m59.391 ms - 140[0m
+[0mPOST / [33m404 [0m63.078 ms - 140[0m
+[0mPOST / [33m404 [0m62.852 ms - 140[0m
+[0mPOST / [33m404 [0m65.966 ms - 140[0m
+[0mPOST / [33m404 [0m62.996 ms - 140[0m
+[0mPOST / [33m404 [0m54.874 ms - 140[0m
+[0mPOST / [33m404 [0m62.680 ms - 140[0m
+[0mPOST / [33m404 [0m56.675 ms - 140[0m
+[0mPOST / [33m404 [0m62.252 ms - 140[0m
+[0mPOST / [33m404 [0m91.576 ms - 140[0m
+[0mPOST / [33m404 [0m53.656 ms - 140[0m
+[0mPOST / [33m404 [0m66.771 ms - 140[0m
+[0mPOST / [33m404 [0m49.999 ms - 140[0m
+[0mPOST / [33m404 [0m66.659 ms - 140[0m

@@ -1,0 +1,16 @@
+{
+  "random": false,
+  "spec_dir": "dist",
+  "spec_files": [
+    "routes/user.[sS]pec.?(m)js",
+    "routes/category.[sS]pec.?(m)js",
+    "routes/album.[sS]pec.?(m)js"
+  ],
+  "helpers": [
+    "../spec/helpers/**/*.?(m)js"
+  ],
+  "env": {
+    "stopSpecOnExpectationFailure": false,
+    "random": false
+  }
+}

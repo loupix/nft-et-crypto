@@ -1,0 +1,7 @@
+<mat-button-toggle-group name="groupHome" aria-label="Group Home" class="btnGroupHome" appearance="legacy" #group="matButtonToggleGroup">
+	<mat-button-toggle class="btnToogle" color="basic" value="new" checked i18n>New NFT's</mat-button-toggle>
+	<mat-button-toggle class="btnToogle" color="basic" value="best" i18n>Best price</mat-button-toggle>
+	<mat-button-toggle class="btnToogle" color="basic" value="view" i18n>Best views</mat-button-toggle>
+</mat-button-toggle-group>
+
+<p>Selected value: {{group.value}}</p>

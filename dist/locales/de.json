@@ -1,0 +1,28 @@
+{
+	"not connected": "Not connected",
+	"already connected": "Already connected",
+	"not admin": "Not admin",
+	"wrond email format": "Wrond email format",
+
+	"Wrong syntax": "Wrong syntax",
+	"wrong password": "Wrong password",
+
+	"user is not admin": "User is not admin",
+	"user is banned": "User is banned",
+	"user is not verified": "User is not verified",
+	"user is not validated": "User is not validated",
+	"user is not owner": "User is not owner",
+
+	"user already exist": "User already exists",
+	"category already exist": "Category already exists",
+	"album already exist": "Album already exists",
+	"item already exist": "Item already exists",
+
+	"user not exist": "User not exists",
+	"category not exist": "Category not exists",
+	"category parent not exist": "Category parent not exists",
+	"album not exist": "Album not exists",
+	"item not exist": "Item not exists"
+
+	
+}
